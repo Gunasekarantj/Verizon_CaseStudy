@@ -30,11 +30,11 @@ public class NotepadController {
 	public List<Notepad> getAllNotes(){
 		return service.getAllNotes();
 	}
-	@GetMapping("notepad/{id}")
+	@GetMapping("/notepad/{id}")
 	public Notepad getNoteById(@PathVariable int id) {
 		return service.getNoteById(id);
 	}
-	@DeleteMapping("/delete{id}")
+	@DeleteMapping("/delete/{id}")
 	public String deleteProductById(@PathVariable int id) {
 		return service.deleteProductById(id);
 	}
